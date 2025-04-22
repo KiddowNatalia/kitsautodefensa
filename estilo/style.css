@@ -1,0 +1,106 @@
+/* Paleta de colores
+color: #c599b6;
+color: #e6b2ba;
+color: #fadoc4;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: "Roboto";
+}
+
+/* Header */
+nav ul li a{
+    color: white;
+    list-style: none;
+    text-decoration: none;
+}
+.paginas{
+    color: white;
+    list-style: none;
+    text-decoration: none;}
+header{
+    background-color: #c599b6;
+    
+}
+header ul{
+    height: 30px;
+    list-style: none;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    }
+
+/* Header */
+
+/*Productos*/
+.productos img{
+    width: 19rem;
+}
+/*Productos*/
+
+/*Banner*/
+.logo{
+    width: 10rem;
+}
+.logo-content{
+    background-color: #e6b2ba;
+}
+.banner{
+    background-image: url(../multimedia/Kit\ banner.jpg);
+    filter: brightness(53%);
+    height: 40rem;
+    color: white;
+    text-align: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.banner h1{
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+}
+/*Banner*/
+/*Kits*/
+.kits img{
+    width: 30rem;
+}
+.kitDefensaPersonal{
+    width: 30rem;
+}
+/*Kits*/
+
+/*Vendedora*/
+    .vendedora{
+        width: 30rem;
+    }
+/*Vendedora*/
+/*Footer*/
+footer{
+    background-color: #c599b6;
+    height: 20rem;
+}
+footer section ul li{
+    list-style: none;
+} a{
+    color: white;
+    list-style: none;
+    text-decoration: none;
+}
+.wp{
+    position: fixed;
+    bottom: 30px;
+    width: 60px;
+    right: 30px;
+   
+   
+}
+/*Footer*/
