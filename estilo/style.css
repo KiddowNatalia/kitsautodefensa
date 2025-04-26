@@ -37,7 +37,6 @@ header ul{
     justify-content: space-around;
     align-items: center;
     }
-
 /* Header */
 
 /*Productos*/
@@ -72,6 +71,7 @@ header ul{
 /*Kits*/
 .kits img{
     width: 30rem;
+    height: 40rem;
 }
 .kitDefensaPersonal{
     width: 30rem;
