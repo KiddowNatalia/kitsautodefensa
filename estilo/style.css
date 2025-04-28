@@ -15,10 +15,9 @@ html{
 }
 
 /* Header */
-nav ul li a{
-    color: white;
-    list-style: none;
-    text-decoration: none;
+h1{
+    text-align: center;
+    margin: 1rem;
 }
 .paginas{
     color: white;
@@ -36,15 +35,88 @@ header ul{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    margin: 0px;
+    padding: 0px;
     }
 /* Header */
 
 /*Productos*/
 .productos img{
-    width: 19rem;
+    width: fill;
+    @media (max-width: 480px){
+        display: flex;
+    flex-direction: column;
+    width: 10rem;
+    }
+    
 }
 /*Productos*/
+.productos{
+    display: flex;
+    flex-direction: row;
+    @media (max-width: 480px){
+        display: flex;
+        flex-direction: column;
+    };
+}
+.producto{
+    border: solid 1px ;
+    border-radius: 8px;
+    width:18%;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 9px 10px 5px 0px rgba(0,0,0,0.13);
+    -webkit-box-shadow: 9px 10px 5px 0px rgba(0,0,0,0.13);
+    -moz-box-shadow: 9px 10px 5px 0px rgba(0,0,0,0.13);
+    @media (max-width: 480px){
+        display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+    }
+    
+}
+.botonComprarProducto{
+    background-color: #c599b6;
+    border: none;
+    color: white;
+    padding: 0.25rem;
+    border-radius: 6px;
+    
+}
+.tendencia{
+    width: 100%;
+    display: flex;
+    @media (max-width: 480px){
+        display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    }
+} 
+.tendencias{
+    width: 100%;
+    padding: 16px;
+    margin: 16px;
+    border: black solid 1px;
+    @media (max-width: 480px){
+        display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+    }
+}
+.imgKit{
+    width: 100%;
 
+   
+}
+
+ 
 /*Banner*/
 .logo{
     width: 10rem;
@@ -52,26 +124,52 @@ header ul{
 .logo-content{
     background-color: #e6b2ba;
 }
-.banner{
-    background-image: url(../multimedia/Kit\ banner.jpg);
-    filter: brightness(53%);
-    height: 40rem;
-    color: white;
-    text-align: center;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-}
-.banner h1{
-    text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+.caroussel__mobile{
+    @media (max-width: 480px){
+        display: none;
+    }
 }
 /*Banner*/
 /*Kits*/
-.kits img{
-    width: 30rem;
-    height: 40rem;
+
+.kit{
+    border: solid 1px ;
+    border-radius: 8px;
+    width:18%;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 9px 10px 5px 0px rgba(0,0,0,0.13);
+    -webkit-box-shadow: 9px 10px 5px 0px rgba(0,0,0,0.13);
+    -moz-box-shadow: 9px 10px 5px 0px rgba(0,0,0,0.13);
+    @media (max-width: 480px){
+        display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+    }
+}
+.kits{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    @media (max-width: 480px){
+        display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    }
+} img{
+    width: fill;
+    @media (max-width: 480px){
+        display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+    }
 }
 .kitDefensaPersonal{
     width: 30rem;
@@ -80,27 +178,49 @@ header ul{
 
 /*Vendedora*/
     .vendedora{
-        width: 30rem;
+        width: 100%;
+    }
+    .cardVendedora{
+        width: 85%;
+    }
+    .vendedora__contenedor{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 /*Vendedora*/
+/*Mapa*/
+.mapa{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 16px;
+    
+}
+/*Mapa*/
 /*Footer*/
 footer{
     background-color: #c599b6;
     height: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-footer section ul li{
-    list-style: none;
-} a{
-    color: white;
-    list-style: none;
-    text-decoration: none;
-}
+
 .wp{
     position: fixed;
     bottom: 30px;
     width: 60px;
     right: 30px;
-   
-   
+}
+.footer__textColor{
+    color: white;
+}
+.footer__center{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
 }
 /*Footer*/
