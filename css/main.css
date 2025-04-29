@@ -1,0 +1,20 @@
+header {
+  background-color: #c599b6;
+}
+header ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  margin: 1rem;
+}
+
+ul {
+  background-color: antiquewhite;
+}
+
+/*# sourceMappingURL=main.css.map */
