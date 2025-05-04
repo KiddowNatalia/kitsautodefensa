@@ -1,0 +1,11 @@
+header{
+    background-color: #ff0000;
+    ul{
+        @include flexBox(flex, row, space-around, center);
+        height: 30px;
+        list-style: none;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+    }
+}

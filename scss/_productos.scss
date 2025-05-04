@@ -1,0 +1,25 @@
+.productos{
+    @include flexBox(flex, row, center, center);
+    @include mediaQueries(){
+        @include flexBox(flex, column, center, center);
+    }
+    img{
+        @include mediaQueries(){
+            @include flexBox (flex, column, center, center);
+            width: 10rem;
+        }
+    }
+}
+.producto{
+    @include mediaQueries(){
+        @include flexBox(flex, column, center, center);
+        width: 90%;
+        align-items: center;
+    }
+    @include flexBox(flex, column, center, center);
+    box-shadow: map-get($map: $sombra, $key: "sombra1" );
+    border: solid 1px ;
+    border-radius: 8px;
+    width:18%;
+    margin: 1rem;
+    }

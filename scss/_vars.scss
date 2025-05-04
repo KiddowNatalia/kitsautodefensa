@@ -1,0 +1,19 @@
+$paleta : (
+    "primario": #c599b6,
+    "secundario": #e6b2ba
+);
+$sombra : (
+    "sombra1": 9px 10px 5px 0px rgba(0,0,0,0.13) 9px 10px 5px 0px rgba(0,0,0,0.13) 9px 10px 5px 0px rgba(0,0,0,0.13),
+);
+
+@mixin flexBox($display, $direction, $justify, $align){
+    display: $display;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+};
+@mixin mediaQueries(){
+    @media (max-width: 480px){
+        @content
+    }
+}
