@@ -1,0 +1,12 @@
+.cardVendedora{
+    padding: 1rem;
+    border: solid 1px black;
+    margin: 1rem;
+    border-radius: 1rem;
+    width: 90%;
+    @include flexBox (flex,row,center,center);
+}
+.vendedora__contenedor{
+    width: 100%;
+    @include flexBox (flex,row,center,center);
+}

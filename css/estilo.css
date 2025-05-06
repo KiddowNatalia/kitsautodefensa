@@ -24,7 +24,7 @@ h1{
     list-style: none;
     text-decoration: none;}
 header{
-    background-color: #c599b6;
+    background-color: #864c4c;
     
 }
 header ul{
@@ -83,7 +83,7 @@ header ul{
 .botonComprarProducto{
     background-color: #c599b6;
     border: none;
-    color: white;
+    color: rgb(92, 81, 81);
     padding: 0.25rem;
     border-radius: 6px;
     

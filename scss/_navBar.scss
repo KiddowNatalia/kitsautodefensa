@@ -1,0 +1,34 @@
+header{
+    background-color: map-get($map: $paleta, $key: "primario");
+    ul{
+        @include flexBox(flex, row, space-around, center);
+        height: 30px;
+        list-style: none;
+        text-decoration: none;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background-color: map-get($map: $paleta, $key: 'primario');
+        a{
+            text-decoration: none;
+            color: white;
+        }
+    }
+}
+section{
+    &.logo-content{
+        background-color: map-get($map: $paleta, $key: 'secundario');
+    }
+    a{
+        img{
+            &.logo{
+                width: 10rem;
+            }
+        }
+    }
+}
+.caroussel__mobile{
+    @media (max-width: 480px){
+        display: none;
+    }
+}

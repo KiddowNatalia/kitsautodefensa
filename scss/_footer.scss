@@ -1,0 +1,51 @@
+@import 'vars';
+footer{
+    background-color: map-get($map: $paleta, $key: 'primario');
+    height: 20rem;
+    @include flexBox (flex,column,center,center);
+   
+    ul{
+        &.footer__center{
+            text-decoration: none;
+            @include flexBox (flex,row,center,center);      
+            width: 50%;
+            border-bottom: 1px solid white;
+            @include mediaQueries (){
+                @include flexBox (flex,column,center,center);
+                width: 100%;
+                margin: 0;
+                text-align: center;
+                padding: 0;
+                   
+            }
+                }  
+        li{
+            list-style: none;
+            width: 100%;
+            margin: 10px;
+            @include mediaQueries (){
+                @include flexBox (flex,column,center,center);
+                margin: 0;      
+            }
+            a{
+                text-decoration: none;
+                @include flexBox (flex,row,center,center);
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+        }   
+        
+     }
+     }
+     .footer__textColor{
+        margin: 1rem;
+        color: white;
+        text-align: center;
+    }
+.wp{
+    position: fixed;
+    bottom: 30px;
+    width: 60px;
+    right: 30px;
+}
