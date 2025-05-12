@@ -3,10 +3,14 @@
     border: solid 1px black;
     margin: 1rem;
     border-radius: 1rem;
-    width: 90%;
+    width: 100%;
     @include flexBox (flex,row,center,center);
 }
 .vendedora__contenedor{
     width: 100%;
-    @include flexBox (flex,row,center,center);
+    @include flexBox (flex,row,start,end);
+}
+
+.bannerKit{
+    width: 100%;
 }
